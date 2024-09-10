@@ -1,7 +1,7 @@
     const express = require('express');
     const app = express();
 
-    // Data to be served
+    
     const myData = {
     subject: 'ITE314',
     exam: 'P2',
@@ -10,7 +10,7 @@
 
     
     app.get('/', (req, res) => {
-    res.send("ITE 314 P2 Exam");
+    res.send("ITE 314 - Aldrin Amantillo");
     });
 
 
@@ -18,17 +18,16 @@
     res.send(myData.subject.toUpperCase());
     });
 
-    // Route to return exam details
-    app.get('/exam', (req, res) => {
+    app.get('/exam', (req, res) => {z
     res.send(myData.exam.toUpperCase());
     });
 
-    // Route to return 'NODEJS'
+    
     app.get('/node', (req, res) => {
     res.send(myData.node.toUpperCase());
     });
 
-    // Route to return a JSON object with /subject, /exam, and /node
+    
     app.get('/mydata', (req, res) => {
     res.json(myData);
     });
