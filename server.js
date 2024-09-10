@@ -18,7 +18,7 @@
     res.send(myData.subject.toUpperCase());
     });
 
-    app.get('/exam', (req, res) => {z
+    app.get('/exam', (req, res) => {
     res.send(myData.exam.toUpperCase());
     });
 
