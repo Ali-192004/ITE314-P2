@@ -10,7 +10,7 @@
 
     
     app.get('/', (req, res) => {
-    res.send("Welcome to my server, visitor! To know more please try adding any of these in the URL: ('/subject', '/exam', '/node', '/mydata')");
+    res.send("ITE 314 P2 Exam");
     });
 
 
